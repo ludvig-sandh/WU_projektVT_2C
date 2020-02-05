@@ -1,0 +1,151 @@
+:root {
+    --theme: #FF9D35;
+    --dark: #292929;
+    --light: #EFEFEF;
+}
+
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.normalText {
+    color: var(--light);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.titleTop, .titleBottom {
+    color: var(--theme);
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 8px 8px 16px var(--dark);
+}
+
+.rubrikText {
+    color: var(--theme);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+body {
+    background-color: var(--dark);
+}
+
+.wrapper {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.menyHeader {
+    height: 100vh;
+}
+
+.imageContainer {
+
+}
+
+.imageLayover {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.backgroundImage {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    height: calc(100vh - 5px);
+    min-width: 100vw;
+    z-index: -1;
+}
+
+.topText, bottomText {
+    margin-top: 15px;
+}
+
+.menyHeader .imageLayover .titleTop {
+    position: absolute;
+    top: calc(62% - 50px);
+}
+
+.menyHeader .imageLayover .titleBottom {
+    position: absolute;
+    top: 62%;
+}
+
+.scrollText {
+    position: absolute;
+    bottom: 45px;
+}
+
+.scrollDown {
+    position: absolute;
+    bottom: 15px;
+    
+    transform: scale(2);
+}
+
+.gradientOverlay {
+    position: absolute;
+    z-index: -0.5;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), var(--dark) 90%);
+}
+
+.line {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: calc(100vw - 30px);
+    height: 1px;
+    background-color: white;
+}
+
+.menySection {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.menySection > * {
+    margin-top: 15px;
+}
+
+.skrivareImage {
+    width: 100%;
+    height: auto;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contentImage {
+    border-radius: 10px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: var(--theme);
+    border-radius: 10px;
+}
+
+button > a {
+    color: var(--light);
+    text-decoration: none;
+}
+
+button > a > h2 {
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.mailText {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--theme);
+}
