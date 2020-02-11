@@ -38,14 +38,12 @@ body {
 .wrapper {
     overflow-x: hidden;
     width: 100vw;
+    min-height: 100vh;
+    position: relative;
 }
 
 .menyHeader {
     height: 100vh;
-}
-
-.imageContainer {
-
 }
 
 .imageLayover {
@@ -188,7 +186,7 @@ button > a > h2 {
     margin: 45px 15px 0px 15px;
     display: grid;
     grid-template-columns: 50px 1fr 50px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 15px;
     grid-gap: 10px;
     grid-template-areas:
         "bk rk na"
@@ -218,15 +216,80 @@ button > a > h2 {
 }
 
 .progressBar {
-    height: 10px;
+    height: 15px;
     width: auto;
-}
-
-.progressBar1 {
-   
 }
 
 .bokningsSection {
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.bokningsSection > * {
+    margin-top: 15px;
+}
+
+.bokningsSection > ul > * {
+    margin-top: 15px;
+}
+
+.bokningsFooter {
+    margin: 15px;
+    margin-top: 80px;
+    position: absolute;
+    bottom: 0px;
+    width: calc(100vw - 30px);
+}
+
+.bokningsFooter > * {
+    margin-top: 15px;
+}
+
+.bokningsFooter > button {
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid var(--theme);
+    background: none;
+    border-radius: 10px;
+    color: var(--light);
+    padding-left: 10px;
+}
+
+.inputTime {
+    width: auto;
+}
+
+input:focus {
+    outline: none;
+}
+
+li {
+    color: white;
+}
+
+.contentWrapper {
+    padding-bottom: 250px;
+}
+
+.bokningKlarHeader {
+    margin-top: 45px;
+}
+
+.bokningsKlarSection {
+    margin-top: 62%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100vw - 30px);
+}
+
+.checkImage {
+    transform: scale(8);
+    margin-bottom: 50px;
 }

@@ -5,39 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Boka 3D-skrivare</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <script src="js/script.js"></script>
 </head>
 <body>
     <div class="wrapper">
-        <header class="bokningsHeader">
-            <button><a href="index.html"><img src="img/back.svg" alt="Bild på en tillbakapil"></a></button>
-            <h2 class="rubrikText bokaRubrik">Boka skrivare</h2>
-            <div class="progressBar3">
-                <div class="progressLine"></div>
-                <div class="circle circle1"></div>
-                <div class="circle circle2"></div>
-                <div class="circle circle3"></div>
-                <div class="circle circle4"></div>
-                <div class="circle circle5"></div>
-            </div>
-        </header>
-        <section class="bokningsSection">
-            <div class="line"></div>
-            <h2 class="rubrikText">Skrivaren är upptagen under dessa tider under valt datum</h2>
-            <ul>
-                <li><p class="normalText">09:00 - 10:30 av Adam 1A</p></li>
-                <li><p class="normalText">09:00 - 10:30 av Adam 1A</p></li>
-                <li><p class="normalText">09:00 - 10:30 av Adam 1A</p></li>
-            </ul>
-        </section>
-        <section class="bokningsSection">
-            <div class="line"></div>
-            <h2 class="rubrikText">Välj tid</h2>
-            <p class="normalText">Skriv in från och till vilken tid du vill boka skrivaren</p>
-            <input type="text" name="" placeholder="Från klockan" id="frånKlInput">
-            <input type="text" name="" placeholder="Till klockan" id="tillKlInput">
-        </section>
+        <div class="contentWrapper">
+            <header class="bokningsHeader">
+                <button class="backButton"><a href="bokningssida2.html"><img src="img/back.png" alt="Bild på en tillbakapil"></a></button>
+                <h2 class="rubrikText bokaRubrik">BOKA SKRIVARE</h2>
+                <div class="imageHolder">
+                    <img src="img/progress_bar3.png" alt="Bild på antal steg kvar" class="progressBar">
+                </div>
+            </header>
+            <section class="bokningsSection">
+                <div class="line"></div>
+                <h2 class="rubrikText">Skrivaren är upptagen under dessa tider under valt datum</h2>
+                <ul>
+                    <li><p class="normalText">09:00 - 10:30 av Adam 1A</p></li>
+                    <li><p class="normalText">09:00 - 10:30 av Adam 1A</p></li>
+                    <li><p class="normalText">09:00 - 10:30 av Adam 1A</p></li>
+                </ul>
+            </section>
+            <section class="bokningsSection">
+                <div class="line"></div>
+                <h2 class="rubrikText">Välj tid</h2>
+                <p class="normalText">Skriv in från och till vilken tid du vill boka skrivaren</p>
+                <ul>
+                    <li>
+                        <p class="normalText">Från:</p>
+                        <input class="input inputTime" type="time" name="frånKlockan" placeholder="Från klockan" id="frånKlockanInput">
+                    </li>
+                    <li>
+                        <p class="normalText">Till:</p>
+                        <input class="input inputTime" type="time" name="tillKlockan" placeholder="Till klockan" id="tillKlockanInput">
+                    </li>
+                </ul>
+            </section>
+        </div>
         <footer class="bokningsFooter">
             <h2 class="rubrikText">Notera</h2>
             <p class="normalText">Du har valt skrivare D den 15 december</p>

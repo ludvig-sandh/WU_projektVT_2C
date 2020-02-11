@@ -5,29 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Boka 3D-skrivare</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <script src="js/script.js"></script>
 </head>
 <body>
     <div class="wrapper">
-        <header class="bokningsHeader">
-            <button><a href="index.html"><img src="img/back.svg" alt="Bild på en tillbakapil"></a></button>
-            <h2 class="rubrikText bokaRubrik">Boka skrivare</h2>
-            <div class="progressBar4">
-                <div class="progressLine"></div>
-                <div class="circle circle1"></div>
-                <div class="circle circle2"></div>
-                <div class="circle circle3"></div>
-                <div class="circle circle4"></div>
-                <div class="circle circle5"></div>
-            </div>
-        </header>
-        <section class="bokningsSection">
-            <div class="line"></div>
-            <h2 class="rubrikText">Vem är du?</h2>
-            <p class="normalText">Skriv namn och klass, så att det går att få tag på dig om något skulle gå fel</p>
-            <input type="text" name="" placeholder="Namn, klass" id="namnInput">
-        </section>
+        <div class="contentWrapper">
+            <header class="bokningsHeader">
+                    <button class="backButton"><a href="bokningssida3.html"><img src="img/back.png" alt="Bild på en tillbakapil"></a></button>
+                    <h2 class="rubrikText bokaRubrik">BOKA SKRIVARE</h2>
+                    <div class="imageHolder">
+                        <img src="img/progress_bar4.png" alt="Bild på antal steg kvar" class="progressBar">
+                    </div>
+                </header>
+            <section class="bokningsSection">
+                <div class="line"></div>
+                <h2 class="rubrikText">Vem är du?</h2>
+                <p class="normalText">Skriv namn och klass, så att det går att få tag på dig om något skulle gå fel</p>
+                <input class="input" type="text" name="namnInput" placeholder="Namn, klass" id="namnInput">
+            </section>
+        </div>
         <footer class="bokningsFooter">
             <h2 class="rubrikText">Notera</h2>
             <p class="normalText">Du har valt skrivare D den 15 december klockan 12:00 till 14:00</p>
