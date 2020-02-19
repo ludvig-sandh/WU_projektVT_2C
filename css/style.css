@@ -73,7 +73,7 @@ body {
 }
 
 .topText {
-    margin-top: 45px;
+    margin-top: 15px;
 }
 
 .bottomText {
@@ -103,12 +103,12 @@ body {
 
 .scrollText {
     position: absolute;
-    bottom: 45px;
+    bottom: 125px;
 }
 
 .scrollDown {
     position: absolute;
-    bottom: 15px;
+    bottom: 95px;
     
     transform: scale(2);
 }
@@ -292,4 +292,75 @@ li {
 .checkImage {
     transform: scale(8);
     margin-bottom: 50px;
+}
+
+
+nav {
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*Utspridda element, de har lika mycket mellanrum runt om kring. Fördelas jämt*/
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark);
+    align-items: center;
+    padding-left: 0;
+    transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.navActive {
+    transform: translateY(100vh); /*Flyttar nollpunkten 100vh neråt.*/ 
+}
+
+.navLinks li {
+    list-style: none;
+    margin-top: 15px
+}
+
+
+.navLinks a {
+    text-decoration: none;
+    color: var(--theme);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+.burger {
+    cursor: pointer;
+    z-index: 5;
+}
+
+.burger div {
+    width: 50px;
+    height: 5px;
+    background-color: rgb(223, 144, 70);
+    margin: 8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 12.5px); /*405deg är också riktigt coolt*/
+}
+
+.toggle .line2 {
+    transform: translate(100px)
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -12.5px);
 }
