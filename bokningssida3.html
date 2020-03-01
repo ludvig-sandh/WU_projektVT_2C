@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Boka 3D-skrivare</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -20,35 +19,27 @@
             </header>
             <section class="bokningsSection">
                 <div class="line"></div>
-                <h2 class="rubrikText">Skrivaren är upptagen under dessa tider under valt datum</h2>
-                <ul>
-                    <li><p class="normalText">09:00 - 10:30 av Adam 1A</p></li>
-                    <li><p class="normalText">09:00 - 10:30 av Adam 1A</p></li>
-                    <li><p class="normalText">09:00 - 10:30 av Adam 1A</p></li>
-                </ul>
-            </section>
-            <section class="bokningsSection">
-                <div class="line"></div>
                 <h2 class="rubrikText">Välj tid</h2>
                 <p class="normalText">Skriv in från och till vilken tid du vill boka skrivaren</p>
                 <ul>
                     <li>
-                        <p class="normalText">Från:</p>
-                        <input class="input inputTime" type="time" name="frånKlockan" placeholder="Från klockan" id="frånKlockanInput">
+                        <p class="blockText normalText">Från:</p>
+                        <input id="inputTidA" class="input inputTime" type="time" name="frånKlockan" placeholder="Från klockan" id="frånKlockanInput">
                     </li>
                     <li>
-                        <p class="normalText">Till:</p>
-                        <input class="input inputTime" type="time" name="tillKlockan" placeholder="Till klockan" id="tillKlockanInput">
+                        <p class="blockText normalText">Till:</p>
+                        <input id="inputTidB" class="input inputTime" type="time" name="tillKlockan" placeholder="Till klockan" id="tillKlockanInput">
                     </li>
                 </ul>
             </section>
         </div>
         <footer class="bokningsFooter">
             <h2 class="rubrikText">Notera</h2>
-            <p class="normalText">Du har valt skrivare D den 15 december</p>
+            <p class="bokningsBeskrivning normalText">Du har valt skrivare D den 15 december</p>
             <button><a href="bokningssida4.html"><h2 class="buttonText">Nästa - Välj namn</h2></a></button>
         </footer>
-
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
+

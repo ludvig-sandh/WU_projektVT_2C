@@ -183,7 +183,7 @@ button > a > h2 {
 }
 
 .bokningsHeader {
-    margin: 45px 15px 0px 15px;
+    margin: 15px 15px 0px 15px;
     display: grid;
     grid-template-columns: 50px 1fr 50px;
     grid-template-rows: 1fr 15px;
@@ -276,7 +276,7 @@ li {
 }
 
 .bokningKlarHeader {
-    margin-top: 45px;
+    margin-top: 15px;
 }
 
 .bokningsKlarSection {
@@ -291,7 +291,7 @@ li {
 
 .checkImage {
     transform: scale(8);
-    margin-bottom: 50px;
+    margin-bottom: 65px;
 }
 
 
@@ -363,4 +363,16 @@ nav {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -12.5px);
+}
+
+.timeList {
+    max-height: 150px;
+    overflow: scroll;
+}
+
+.blockText {
+    display: inline;
+    margin-right: 15px;
+    position: relative;
+    top: 2.5px;
 }

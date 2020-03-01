@@ -189,6 +189,9 @@
 
     <h3>Lektion vecka 9</h3>
     <!-- Fyll på med dokumentation här. -->
+    (Ledig under lektion)
+
+    (Fritid) Idag har jag fyllt script.js-dokumentet med kod som gör hemsidan mer funktionell och dynamisk. När man ska boka en 3D-skrivare går man igenom flera steg för att välja maskin, datum, tid och så vidare. Under bokningen ville jag att man skulle kunna se vad man gjort för val dittills. Efter bokningen har genomförts ville jag också att man skulle få en överblick över vad och när man har bokat. Genom att hitta alla input-element som användaren använder för att skriva in sina val kunde jag addera event-listeners som lyssnar efter en specifik händelse som man valt på elementet, som sedan kör en funktion i js-filen, och jag kan dessutom få datan som användaren skriver in. Något jag upptäckte ganska snabbt är att javascript-filen läses om varje gång ett nytt html-dokument laddas in. Detta gör att jag inte kan spara all information som behövs mellan sidorna med hjälp av variabler. Jag sökte upp lösningen och hittade "localStorage". Där kan jag med hjälp av en nyckel spara data ("key-pair"). På detta sättet kan jag spara information som användaren skrivit in och sedan visa upp det på andra sidor, och det var så jag lyckades med det jag beskrev i mina första meningar. Först tänkte jag även implementera en lista där man kunde se alla bokningar som gjorts under en särskild dag, och därför tänkte att jag behövde spara all data i ordning, istället för att skriva över den (liknande att spara alla bokningar i t.ex. en array, istället för att tilldela om alla variabler). Detta är varför jag sparar all data med nycklar som är numrerade, vilket är onödigt just nu, men jag tänker att om jag får tid över i slutet av projektets gång kan jag använda nycklarnas numreringar för att visa en lista på alla bokningar.
 
     <h3>Lektion vecka 10</h3>
     <!-- Fyll på med dokumentation här. -->
