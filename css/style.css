@@ -322,7 +322,7 @@ nav {
 }
 
 .navActive {
-    transform: translateY(100vh); /*Flyttar nollpunkten 100vh neråt.*/ 
+    transform: translateX(100vw); /*Flyttar nollpunkten 100vh neråt.*/ 
 }
 
 .navLinks li {
@@ -375,4 +375,11 @@ nav {
     margin-right: 15px;
     position: relative;
     top: 2.5px;
+}
+
+.logo {
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    z-index: 1;
 }
