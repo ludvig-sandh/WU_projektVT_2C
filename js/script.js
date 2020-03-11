@@ -6,9 +6,17 @@ const nl3 = document.querySelector('#navLink3');
 const nl4 = document.querySelector('#navLink4');
 
 function toggleMeny() {
-    nav.classList.toggle('navActive');
-    burger.classList.toggle('toggle');
-    console.log("Toggled");
+    if (!burger.classList.contains('invisible')) {
+        nav.classList.toggle('navActive');
+        burger.classList.toggle('toggle');
+    }
+}
+
+function toggleHamburgerVisible() {
+    if (burger.classList.contains('toggle')) {
+        toggleMeny();
+    }
+    burger.classList.toggle('invisible');
 }
 
 if (burger) {
@@ -17,6 +25,10 @@ if (burger) {
     nl2.addEventListener('click', toggleMeny);
     nl3.addEventListener('click', toggleMeny);
     nl4.addEventListener('click', toggleMeny);
+    
+    var x = window.matchMedia("(min-width: 1025px)");
+    toggleHamburgerVisible(x);
+    x.addListener(toggleHamburgerVisible);
 }
 
 class bokning {

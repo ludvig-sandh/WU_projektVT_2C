@@ -161,7 +161,7 @@ body {
 }
 
 button {
-    width: 100%;
+    width: calc(100% - 30px);
     height: 50px;
     border: none;
     background-color: var(--theme);
@@ -274,27 +274,30 @@ li {
     color: white;
 }
 
-.contentWrapper {
-    padding-bottom: 250px;
-}
-
 .bokningKlarHeader {
     margin-top: 15px;
 }
 
 .bokningsKlarSection {
-    margin-top: 62%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-left: 15px;
     margin-right: 15px;
     width: calc(100vw - 30px);
+    position: absolute;
+    bottom: 65px;
+    top: 30px;
+}
+
+.bokningKlarBeskrivning {
+    align-self: center;
 }
 
 .checkImage {
     transform: scale(8);
-    margin-bottom: 65px;
+    position: relative;
+    bottom: 65px;
 }
 
 
@@ -345,6 +348,12 @@ nav {
 .burger {
     cursor: pointer;
     z-index: 5;
+    transition-duration: 0.5s;
+    opacity: 1;
+}
+
+.invisible {
+    opacity: 0;
 }
 
 .burger div {
@@ -387,8 +396,33 @@ nav {
     z-index: 1;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 1025px) {
     .menyMain {
         display: flex;   
+    }
+
+    .burger:hover {
+        cursor: default;
+    }
+
+    button {
+        display: block;
+        width: 300px;
+    }
+
+    .backgroundImage {
+        width: 100vw;
+        height: auto;
+        position: relative;
+        bottom: 280px;
+    }
+
+    .bottomBackgroundImage {
+        bottom: 600px;
+    }
+
+    .imageContainer {
+        height: 100vh;
+        overflow: hidden;
     }
 }
