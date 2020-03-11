@@ -130,26 +130,29 @@ body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0), var(--dark) 90%);
 }
 
-.line {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: calc(100vw - 30px);
-    height: 1px;
-    background-color: white;
-}
-
 .menySection {
     margin-right: 15px;
     margin-left: 15px;
+    margin-bottom: 15px;
 }
 
 .menySection > * {
     margin-top: 15px;
+    width: calc(100% - 30px);
+}
+
+.line {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: calc(100% - 30px);
+    height: 1px;
+    background-color: white;
 }
 
 .skrivareImage {
-    width: 100%;
+    width: calc(100% - 30px);
     height: auto;
+    max-width: 500px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -382,4 +385,10 @@ nav {
     top: 4px;
     left: 8px;
     z-index: 1;
+}
+
+@media screen and (min-width: 450px) {
+    .menyMain {
+        display: flex;   
+    }
 }

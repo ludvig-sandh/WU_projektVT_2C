@@ -201,6 +201,11 @@
 
     <h3>Lektion vecka 11</h3>
     <!-- Fyll på med dokumentation här. -->
+    Det var inget. Jag kom på att det är onödigt att validera kod om jag sedan ska ändra på den. Enligt min planering ska jag efter mina tester anpassa sidan med media queries till desktop. Varför inte validera kod och göra tester på en hemsida som ändå är klar. Om jag hittar varningar eller fel på min css exempelvis, och sedan skriver massa mer css, kan det ju hända att jag har fler fel i css dokumentet som inte fanns innan. Därför fokuserade jag idag istället på att desktop-anpassa min hemsida. Jag började med att hitta en hemsida (mydevice.io/#compare_devices) som listade alla css-bredder och höjder på olika enheter. Jag såg att de flesta mobilenheter hade en bredd på mellan 300px och 450px. Även för tablets passar mobilversionen bäst. Tablets har bredden mellan ca 700px och 1024px. Hemsidan skulle alltså visa mobilanpassade versionen för bredder mindre eller lika med 1024px, och annars visa den desktopanpassade versionen. Efter att ha delat upp min main i två delar och satt display flex på den enligt min skiss jag först gjorde denna lektionen:
+    <img src="img/planering_desktop_anpassning.png" alt="Bild på min skiss för desktop-anpassad hemsida">
+    fick jag ett utseende som liknade min skiss. När jag däremot gjorde bredden bredare märkte jag att eftersom min bild i en av sektionerna ska ha särskilda bredd-till-höjd-proportioner kommer höjden öka väldigt mycket när bredden ökar mycket. Det såg ut så här:
+    <img src="img/bild_proportioner.PNG" alt="Bild på hur bilden tar onödigt mycket plats på grund av dess proportionsförhållande">
+    Min lösning är att jag sätter bildens maxbredd till ett specifikt värde och saken löstes. När jag kommer hem idag vill jag fixa så att hamburgermenyn försvinner för desktopanpassade versionen, eftersom man redan kan se alla sektioner på en och samma sida. Jag vill också ändra på bakgrundsbilden vid min header och footer så att bilden har rätt proportioner och inte är utdragen.
 
     <h3>Lektion vecka 12</h3>
     <!-- Fyll på med dokumentation här. -->
