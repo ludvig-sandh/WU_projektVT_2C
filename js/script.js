@@ -6,17 +6,14 @@ const nl3 = document.querySelector('#navLink3');
 const nl4 = document.querySelector('#navLink4');
 
 function toggleMeny() {
-    if (!burger.classList.contains('invisible')) {
-        nav.classList.toggle('navActive');
-        burger.classList.toggle('toggle');
-    }
+    nav.classList.toggle('navActive');
+    burger.classList.toggle('toggle');
 }
 
 function toggleHamburgerVisible() {
     if (burger.classList.contains('toggle')) {
         toggleMeny();
     }
-    burger.classList.toggle('invisible');
 }
 
 if (burger) {

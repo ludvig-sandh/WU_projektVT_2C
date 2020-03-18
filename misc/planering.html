@@ -212,9 +212,19 @@
 
     <h3>Lektion vecka 12</h3>
     <!-- Fyll på med dokumentation här. -->
+    Idag var det dags för testning och validering. Jag började med testning, och dokumentation över detta finns under rubriken "Testning" nedan.
 
     <h2>4. Testning</h2>
     <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? Hur ser resultatet ut på en riktig telefon? -->
+    <h3>Testning</h3>
+    <p>Jag kollade igenom hela webbsidan med chrome och allt såg bra ut. Media queries fungerade och allt kändes responsivt och märkte inget fel(vilket jag borde gjort, men det kommer jag till sen). Firefox fungerade på samma sätt, men edge hade ett problem jag inte räknade med. Min check.svg visades inte helt korrekt. Så här såg det ut:</p>
+    <img style="width: 60vw; height: auto;" src="img/check_konstig.PNG" alt="Bild på hur checkmarkeringen blir ovanligt stor">
+    <p>Checkmarkeringen blir ovanligt stor. Efter att ha felsökt lite märkte jag att jag glömt att specifiera en bredd på min svg. Efter att ha satt en passande bredd som anpassar sig efter fönsterhöjden ser det nu bättre ut:</p>
+    <img style="width: 60vw; height: auto;" src="img/check_fixad.PNG" alt="Bild på fixad checkmarkering">
+    <p>Av någon anledning kanske just edge inte visste hur den skulle placera ut svg-filen på samma sätt som de andra webbläsarna gjorde, om den inte hade fått specifika mått på elementet. Jag hade även ett problem när jag testade på mobilen. Jag märkte att min hamburgarmeny inte dök upp, vilket den borde göra på mobilversionen. Jag kollade igenom min css ordentligt och märkte att det verkade som jag hade tänkt tvärt om när det gällde media queries. När fönsterbredden blev större än 1025px dök hamburgarmenyn upp, och annars försvann den. Jag bytte snabbt plats på lite klasser och gjorde rent lite kod i js-filen också som var lite rörig. Jag vet inte riktigt hur jag tänkte tidigare lektioner, men det är inte så konstigt att js-filen blev rörig när jag tidigare hade blandat ihop saker helt. Jag borde ha märkt det under de andra webbläsartesterna men det gjorde jag tydligen inte. Efter dessa justeringar ser jag nu att resultatet inte längre skiljer sig. Något jag var extra noga med att kolla var hur alla inputs skulle se ut och fungera. Fönsterna som dyker upp där jag väljer datum skiljer sig från webbläsare till webbläsare, men de alla fungerar likadant och det gick precis lika lätt att genomföra en fullständig bokning med alla webbläsare jag testade. Sammanlagt har jag alltså testat chrome på dator, firefox på dator, edge på dator, chrome på iphone och safari på iphone, och allt fungerar precis som jag vill och layouten eller andra detaljer på sidorna skiljer sig inte åt (förutom hur inputs fungerar som sagt).</p>
+
+    <h3>Validering</h3>
+    <p>Jag började med att validera min html-kod på validator.w3.org och fick några resultat på varningar och fel. Det första var att jag inte hade angivit språk för mina html-dokument. Jag gick in och lade till lang på min head-tagg. En sak till som validatorn visade fel på var att jag hade en div-tagg direkt under en ul-tagg. Jag hade alltså glömt att lägga mina div-taggar i li-taggar. Efter detta fixet försvann ca 90% av problemen som dök upp på validatorn. Efter detta hade jag bara två fel kvar. En av dem var att en a-tagg inte fick ligga precis under en button-tagg. Jag löste detta genom att ta bort button-taggen helt, och endast använda mig av a-taggar, som jag sedan stylar som knappar. Detta tog bort resten av problemen.</p>
 
     <h2>5. Utvärdering</h2>
     <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
