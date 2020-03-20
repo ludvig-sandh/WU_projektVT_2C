@@ -11,7 +11,7 @@
     <div class="wrapper">
         <div class="contentWrapper">
             <header class="bokningsHeader">
-                <button class="backButton"><a href="bokningssida2.html"><img src="img/back.png" alt="Bild på en tillbakapil"></a></button>
+                <a class="backButton" href="bokningssida2.html"><img src="img/back.png" alt="Bild på en tillbakapil"></a>
                 <h2 class="rubrikText bokaRubrik">BOKA SKRIVARE</h2>
                 <div class="imageHolder">
                     <img src="img/progress_bar3.png" alt="Bild på antal steg kvar" class="progressBar">
@@ -24,11 +24,11 @@
                 <ul>
                     <li>
                         <p class="blockText normalText">Från:</p>
-                        <input id="inputTidA" class="input inputTime" type="time" name="frånKlockan" placeholder="Från klockan" id="frånKlockanInput">
+                        <input id="inputTidA" class="input inputTime" type="time" name="frånKlockan">
                     </li>
                     <li>
                         <p class="blockText normalText">Till:</p>
-                        <input id="inputTidB" class="input inputTime" type="time" name="tillKlockan" placeholder="Till klockan" id="tillKlockanInput">
+                        <input id="inputTidB" class="input inputTime" type="time" name="tillKlockan">
                     </li>
                 </ul>
             </section>
@@ -36,7 +36,7 @@
         <footer class="bokningsFooter">
             <h2 class="rubrikText">Notera</h2>
             <p class="bokningsBeskrivning normalText">Du har valt skrivare D den 15 december</p>
-            <button><a href="bokningssida4.html"><h2 class="buttonText">Nästa - Välj namn</h2></a></button>
+            <a class="button buttonText" href="bokningssida4.html">Nästa - Namn</a>
         </footer>
     </div>
     <script src="js/script.js"></script>
